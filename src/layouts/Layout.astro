@@ -1,0 +1,35 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Frontend Mentor | Audiophile e-commerce website",
+  description = "A simple e-commerce website for an Audiophile. Built with Astro.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="{description}" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Website Title -->
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+

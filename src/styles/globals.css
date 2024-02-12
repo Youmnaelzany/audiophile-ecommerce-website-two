@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Rest */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  min-height: 100svh;
+  width: 90rem;
+  max-width: 1440px;
+}
+
+img,
+picture,
+svg,
+video {
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 75ch not higher than that */
+p {
+  max-width: 75ch;
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+
+/* Header Styling */
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 10.31rem;
+  width: 69.375rem;
+  height: 0.0625rem;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+/* Index */
+.home-details {
+  background: url("/images/home/desktop/image-hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}

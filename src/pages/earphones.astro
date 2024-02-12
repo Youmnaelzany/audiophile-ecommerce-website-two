@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Header from "../components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Category from "../components/Category.astro";
+import BestAudioGear from "../components/BestAudioGear.astro";
+
+---
+
+
+
+<Layout title="Frontend Mentor | Audiophile e-commerce website">
+  <!-- Header -->
+  <Header />
+  <main>
+    <!-- Page Content Of EARPHONES -->
+    <section
+      class="bg-[#0E0E0E] text-[#fff] text-[2.5rem] font-bold leading-[2.75rem] tracking-[0.08931rem] uppercase flex justify-center items-center py-[6.6rem]"
+    >
+      <h1 class="">EARPHONES</h1>
+    </section>
+        <!-- First Product Of EARPHONES -->
+        <section
+        class="mx-[10.31rem] my-40 flex justify-between items-center gap-[7.81rem]"
+      >
+        <!-- Image Of The Product -->
+        <div class="w-[33.75rem]">
+          <img
+            src="/images/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+            alt=""
+            class=""
+          />
+        </div>
+        <!-- Detailes Of The Product -->
+        <div class="flex flex-col gap-4">
+          <h2
+            class="text-[#D87D4A] text-sm font-normal leading-normal tracking-[0.625rem] uppercase"
+          >
+            NEW PRODUCT
+          </h2>
+          <h2
+            class="w-[27.8125rem] text-[#000] text-[2.5rem] font-bold leading-[2.75rem] tracking-[0.08931rem] uppercase"
+          >
+          YX1 WIRELESS EARPHONES
+          </h2>
+          <p
+            class="w-[27.8125rem] text-[#000] opacity-50 text-[0.9375rem] font-normal leading-[1.5625rem] mt-4"
+          >
+          Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.
+        </p>
+          <a
+            href="/product-earphones"
+            target="_blank"
+            class="flex justify-center items-center mt-6 w-40 h-12 bg-[#D87D4A] text-[#fff] text-[0.8125rem] font-bold leading-normal tracking-[0.0625rem] uppercase"
+            >See Product</a
+          >
+        </div>
+      </section>
+    <Category />
+    <BestAudioGear />
+  </main>
+  <!-- Footer -->
+  <Footer />
+</Layout>
