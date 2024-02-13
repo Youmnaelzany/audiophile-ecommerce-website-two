@@ -9,12 +9,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+    screens: {
+      sm: { min: "640px", max: "767px" },
+      md: { min: "768px", max: "1023px" },
+      xl: { min: "1280px", max: "1440px" },
     },
     extend: {
       backgroundImage: {
