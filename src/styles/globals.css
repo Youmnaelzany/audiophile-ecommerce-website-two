@@ -91,3 +91,7 @@ header::after {
   height: 0.25rem;
   background: #d87d4a;
 }
+
+input[type="radio"]:checked {
+  accent-color: #d87d4a;
+}

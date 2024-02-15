@@ -1,87 +1,265 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Header from "../components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Category from "../components/Category.astro";
+import BestAudioGear from "../components/BestAudioGear.astro";
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
-  <title>Frontend Mentor | Audiophile e-commerce website</title>
-</head>
-
-<body>
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Go back
-
-  XX99 Mark I Headphones
-
-  As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate 
-  audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios 
-  and on the go.
-
-  $1,750
-  1
-  Add to cart
-
-  Features
-  As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades 
-  of audio expertise, redefining the critical listening experience. This pair of closed-back headphones 
-  are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.
-
-  From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, 
-  the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers 
-  up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. 
-  For connectivity, a specially tuned cable is included with a balanced gold connector.
-
-  In the box
-  
-  1x Headphone unit
-  2x Replacement earcups
-  1x User manual
-  1x 3.5mm 5m audio cable
-  
-  You may also like
-  
-  XX99 Mark II
-  See product
-  
-  XX59
-  See product
-  
-  ZX9 speaker
-  See product
-
-  Headphones
-  Shop
-  
-  Speakers
-  Shop
-  
-  Earphones
-  Shop
-  
-  Bringing you the best audio gear
-  Located at the heart of New York City, Audiophile is the premier store for high end headphones,
-  earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
-  rooms available for you to browse and experience a wide range of our products. Stop by our store
-  to meet some of the fantastic people who make Audiophile the best place to buy your portable
-  audio equipment.
-
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and
-  visit our demo facility - we’re open 7 days a week.
-
-  Copyright 2021. All Rights Reserved
-</body>
-
-</html>
+<Layout title="Frontend Mentor | Audiophile e-commerce website">
+  <!-- Header -->
+  <Header />
+  <main>
+    <!-- XX99 Mark II Headphones -->
+    <section
+      class="flex justify-between items-center mx-[10.31rem] mt-[4.94rem] gap-[7.81rem] mb-[10rem]"
+    >
+      <!-- Product Image -->
+      <div class="flex flex-col gap-[3.5rem]">
+        <a
+          href="/"
+          class="inline-block opacity-50 text-[#000] text-[0.9375rem] font-normal leading-[1.5625rem]"
+          >Go Back
+        </a>
+        <img
+          src="/images/product-xx99-mark-one-headphones/desktop/image-product.jpg"
+          alt=""
+          class="inline-block w-[33.75rem] h-[35rem] rounded-lg"
+        />
+      </div>
+      <!-- Product Info -->
+      <div class="flex flex-col gap-4">
+        <h2
+          class="w-[27.8125rem] text-[2.5rem] font-bold leading-[2.75rem] tracking-[0.08931rem] uppercase"
+        >
+          XX99 Mark I Headphones
+        </h2>
+        <p
+          class="w-[27.8125rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50 mt-4"
+        >
+          As the gold standard for headphones, the classic XX99 Mark I offers
+          detailed and accurate audio reproduction for audiophiles, mixing
+          engineers, and music aficionados alike in studios and on the go.
+        </p>
+        <h3
+          class="text-[#000] text-lg font-bold leading-normal tracking-[0.08038rem] uppercase mt-4"
+        >
+          $ 1,750
+        </h3>
+        <!-- Shop The Product -->
+        <div class="flex items-center gap-4">
+          <div
+            class="bg-[#F1F1F1] w-[7.5rem] h-12 flex justify-center items-center gap-[1.31rem]"
+          >
+            <button type="button" class="minusBtn"> - </button>
+            <button type="button" class="minusBtn"> 1 </button>
+            <button type="button" class="PlusBtn"> + </button>
+          </div>
+          <button
+            type="button"
+            class="bg-[#D87D4A] w-40 h-12 text-[#fff] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase hover:bg-[#FBAF85] transition ease-in-out duration-500"
+            >ADD TO CART</button
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Features & In The Box -->
+    <section
+      class="flex justify-between items-center gap-[7.81rem] mx-[10.31rem] mb-40"
+    >
+      <!-- FEATURES -->
+      <div class="flex flex-col gap-8 w-[39.6875rem ]">
+        <h2
+          class="text-[#000] text-[2rem] leading-[2.25rem] tracking-[0.07144rem] uppercase"
+        >
+          FEATURES
+        </h2>
+        <p
+          class="w-[39.6875rem] text-[#000] text-[0.9375rem] font-normal opacity-50"
+        >
+          As the headphones all others are measured against, the XX99 Mark I
+          demonstrates over five decades of audio expertise, redefining the
+          critical listening experience. This pair of closed-back headphones are
+          made of industrial, aerospace-grade materials to emphasize durability
+          at a relatively light weight of 11 oz.
+        </p>
+        <p
+          class="w-[39.6875rem] text-[#000] text-[0.9375rem] font-normal opacity-50"
+        >
+          From the handcrafted microfiber ear cushions to the robust metal
+          headband with inner damping element, the components work together to
+          deliver comfort and uncompromising sound. Its closed-back design
+          delivers up to 27 dB of passive noise cancellation, reducing resonance
+          by reflecting sound to a dedicated absorber. For connectivity, a
+          specially tuned cable is included with a balanced gold connector.
+        </p>
+      </div>
+      <!-- In The Box -->
+      <div class="flex flex-col gap-8 w-[21.875rem] h-[14.0625rem]">
+        <h2
+          class="text-[#000] text-[2rem] font-bold leading-[2.5rem] tracking-[0.07144rem] uppercase"
+        >
+          in the box
+        </h2>
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-[1.5rem]">
+            <h3
+              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+            >
+              1x
+            </h3>
+            <h3
+              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+            >
+              Headphone Unit
+            </h3>
+          </div>
+          <div class="flex gap-[1.5rem]">
+            <h3
+              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+            >
+              2x
+            </h3>
+            <h3
+              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+            >
+              Replacement Earcups
+            </h3>
+          </div>
+          <div class="flex gap-[1.5rem]">
+            <h3
+              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+            >
+              1x
+            </h3>
+            <h3
+              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+            >
+              User Manual
+            </h3>
+          </div>
+          <div class="flex gap-[1.5rem]">
+            <h3
+              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+            >
+              1x
+            </h3>
+            <h3
+              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+            >
+              3.5mm 5m Audio Cable
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Images  -->
+    <section
+      class="mx-[10.31rem] mb-40 flex justify-between items-center gap-2"
+    >
+      <!-- First Col -->
+      <div class="flex flex-col gap-8">
+        <!-- First Image / Gallery 1-->
+        <div class="">
+          <img
+            src="/images/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+        <!-- Second Image / Gallery 2-->
+        <div class="">
+          <img
+            src="/images/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg"
+            alt=""
+            class="rounded-lg"
+          />
+        </div>
+      </div>
+      <!-- Second Col / Gallery 3-->
+      <div class="">
+        <img
+          src="/images/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
+          alt=""
+          class="rounded-lg"
+        />
+      </div>
+    </section>
+    <!-- You May Also Like -->
+    <section
+      class="mx-[10.31rem] mb-40 flex flex-col justify-center items-center gap-12"
+    >
+      <h2
+        class="uppercase text-[#000] text-[2rem] font-bold leading-[2.5rem] tracking-[0.07144rem]"
+      >
+        you may also like
+      </h2>
+      <div class="flex justify-center items-center gap-[1.88rem] text-center">
+        <div class="flex flex-col gap-8 justify-center items-center">
+          <img
+            src="/images/shared/desktop/image-xx99-mark-two-headphones.jpg"
+            alt=""
+            class="w-[21.875rem] h-[19.875rem] bg-[#F1F1F1] rounded-lg"
+          />
+          <h2
+            class="tracking-[0.10713rem] text-[#000]
+            text-[1.5rem]
+            font-bold
+            leading-normal"
+          >
+            XX99 MARK II
+          </h2>
+          <a
+            href="/product-xx99-mark-two-headphones"
+            target="_self"
+            class="w-40 h-12 bg-[#D87D4A] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase flex justify-center items-center mt-6 hover:bg-[#FBAF85] transition-all ease-in-out duration-500 text-[#fff]"
+            >See Product</a
+          >
+        </div>
+        <div class="flex flex-col gap-8 justify-center items-center">
+          <img
+            src="/images/shared/desktop/image-xx59-headphones.jpg"
+            alt=""
+            class="w-[21.875rem] h-[19.875rem] bg-[#F1F1F1] rounded-lg"
+          />
+          <h2
+            class="tracking-[0.10713rem] text-[#000] text-[1.5rem] font-bold leading-normal uppercase"
+          >
+            XX59
+          </h2>
+          <a
+            href="/product-xx59-headphones"
+            target="_self"
+            class="w-40 h-12 bg-[#D87D4A] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase flex justify-center items-center mt-6 hover:bg-[#FBAF85] transition-all ease-in-out duration-500 text-[#fff]"
+            >See Product</a
+          >
+        </div>
+        <div class="flex flex-col gap-8 justify-center items-center">
+          <img
+            src="/images/shared/desktop/image-zx9-speaker.jpg"
+            alt=""
+            class="w-[21.875rem] h-[19.875rem] bg-[#F1F1F1] rounded-lg"
+          />
+          <h2
+            class="tracking-[0.10713rem] text-[#000] text-[1.5rem] font-bold leading-normal uppercase"
+          >
+            ZX9 SPEAKER
+          </h2>
+          <a
+            href="/product-zx9-speaker"
+            target="_self"
+            class="w-40 h-12 bg-[#D87D4A] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase flex justify-center items-center mt-6 hover:bg-[#FBAF85] transition-all ease-in-out duration-500 text-[#fff]"
+            >See Product</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Category -->
+    <Category />
+    <!--  Best Audio Gear -->
+    <BestAudioGear />
+  </main>
+  <!-- Footer -->
+  <Footer />
+</Layout>

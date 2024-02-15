@@ -1,44 +1,400 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Header from "../components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+<Layout title="Frontend Mentor | Audiophile e-commerce website">
+  <!-- Header -->
+  <Header />
+  <main class="m-0 bg-[#F1F1F1]">
+    <!-- Go Back -->
+    <section class="mx-[10.31rem] pt-[4.94rem]">
+      <a
+        href="/"
+        class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000]"
+        >Go Back</a
+      >
+    </section>
+    <!-- CheckOut FORMS & CART-->
+    <section class="mx-[10.31rem] my-[4.94rem] flex gap-[1.87rem]">
+      <!-- Form -->
+      <div class="h-[70.375rem] w-[45.625rem] rounded-lg bg-[#fff] px-12 py-14">
+        <h1
+          class="mb-[2.56rem] text-[2rem] font-bold uppercase leading-[2.5rem] tracking-[0.07144rem] text-[#000]"
+        >
+          CHECKOUT
+        </h1>
+        <!-- Billing Details -->
+        <h2
+          class="mt-[2.56rem] text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.05806rem] text-[#D87D4A]"
+        >
+          Billing Details
+        </h2>
+        <!-- Name & Email & Phone Number -->
+        <form
+          action=""
+          method="get"
+          class="mt-4 grid grid-cols-2 gap-x-4 gap-y-6"
+        >
+          <!-- UserName -->
+          <label
+            for="userName"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >Name
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="Alexei Ward"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF]
+              bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+            />
+          </label>
+          <!-- Email Address -->
+          <label
+            for="userEmail"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >Email Address
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="alexei@mail.com"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF]
+              bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+            />
+          </label>
+          <!-- Phone Number -->
+          <label
+            for="tel"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >Phone Number
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+1 202-555-0136"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF]
+            bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+            />
+          </label>
+        </form>
+        <!-- Shipping Info -->
+        <h2
+          class="mt-[3.31rem] text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.05806rem] text-[#D87D4A]"
+        >
+          shipping info
+        </h2>
+        <!-- Address -->
+        <form action="" class="grid grid-cols-2 gap-x-4 gap-y-6">
+          <label
+            for="address"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >Address
+            <input
+              type="text"
+              name="address"
+              id="address"
+              class="h-14 w-[39.625rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF] bg-[#fff] pl-6
+             text-sm font-bold
+            leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+              placeholder="1137 Williams Avenue"
+            />
+          </label>
+        </form>
+        <!-- ZIP Code & City -->
+        <form action="" class="mt-6 flex items-center gap-4">
+          <!-- ZIP Code -->
+          <label
+            for="ZIP"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >ZIP Code
+            <input
+              type="text"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF] bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+              name="ZIP"
+              id="ZIP"
+              placeholder="10001"
+            />
+          </label>
+          <!-- City -->
+          <label
+            for="City"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >City
+            <input
+              type="text"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF] bg-[#fff] pl-6
+             text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+              name="City"
+              id="City"
+              placeholder="New York"
+            />
+          </label>
+        </form>
+        <!-- Country  -->
+        <form action="" class="mt-6">
+          <label
+            for="Country"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >Country
+            <input
+              type="text"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF]
+            bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+              name="Country"
+              id="Country"
+              placeholder="United States"
+            />
+          </label>
+        </form>
+        <!-- Payment Details -->
+        <h2
+          class="mt-[3.81rem] text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.05806rem] text-[#D87D4A]"
+        >
+          payment details
+        </h2>
+        <h2
+          class="pt-4 text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+        >
+          Payment Method
+        </h2>
+        <!-- Payment Method -->
+        <form action="" class="flex flex-col items-end justify-start gap-4">
+          <label
+            id="eMoneyLabel"
+            for="eMoney"
+            class="flex h-14 w-[19.3125rem] cursor-pointer items-center gap-4 rounded-lg border border-solid border-[#CFCFCF] pl-4 transition duration-500 ease-in-out hover:border-[#D87D4A]"
+          >
+            <input
+              aria-labelledby="eMoneyLabel"
+              type="radio"
+              id="eMoney"
+              name="payment"
+              value="eMoney"
+            />
+            e-Money
+          </label>
+          <label
+            id="cashLabel"
+            for="cash"
+            class="flex h-14 w-[19.3125rem] cursor-pointer items-center gap-4 rounded-lg border border-solid border-[#CFCFCF] pl-4 transition duration-500 ease-in-out hover:border-[#D87D4A]"
+          >
+            <input
+              aria-labelledby="cashLabel"
+              type="radio"
+              id="cash"
+              name="payment"
+              value="cash"
+            />
+            Cash on Delivery
+          </label>
+        </form>
 
-    <title>Frontend Mentor | Audiophile e-commerce website</title>
-  </head>
-
-  <body>
-    Home Headphones Speakers Earphones
-
-    <!-- Cart Modal -->
-    Cart(3) Remove All XX99 MK II x1 $2,999 XX59 x2 $899 YX1 x1 $599 Total
-    $5,396 Checkout
-    <!-- Cart modal end -->
-
-    Go back Checkout Billing details Name Email address Phone number Shipping
-    info Address ZIP code City Country Payment details Payment method e-Money
-    Cash on delivery e-Money number e-money PIN The ‘Cash on Delivery’ option
-    enables you to pay in cash when our delivery courier arrives at your
-    residence. Just make sure your address is correct so that your order will
-    not be cancelled. Summary XX99 MK II x1 $2,999 XX59 x2 $899 YX1 x1 $599
-    Total $5,396 Shipping $10 VAT $120 Grand total $5,526 Continue & pay
-
-    <!-- Success Modal -->
-    Thank you for your order You will receive an email confirmation shortly.
-    XX99 MK II x 1 $2,999 and 2 other item(s) Grand total $5,526 Back to home
-    <!-- End success modal -->
-
-    Home Headphones Speakers Earphones Audiophile is an all in one stop to
-    fulfill your audio needs. We're a small team of music lovers and sound
-    specialists who are devoted to helping you get the most out of personal
-    audio. Come and visit our demo facility - we’re open 7 days a week.
-    Copyright 2021. All Rights Reserved
-  </body>
-</html>
+        <!-- Number & Pin -->
+        <form
+          action=""
+          class="mt-6 flex items-center justify-between"
+          style="display: none;"
+          onclick=""
+        >
+          <label
+            for="e-num"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+            >e-Money Number
+            <input
+              type="text"
+              name="e-num"
+              id="e-num"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF]
+             bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+              placeholder="238521993"
+            />
+          </label>
+          <label
+            for="e-pin"
+            class="flex flex-col gap-[.56rem] text-xs font-bold leading-normal tracking-[-0.01338rem] text-[#000]"
+          >
+            e-Money PIN
+            <input
+              type="text"
+              name="e-pin"
+              id="e-pin"
+              class="h-[3.5rem] w-[19.3125rem] cursor-pointer rounded-lg border border-solid border-[#CFCFCF]
+            bg-[#fff] pl-6 text-sm font-bold leading-normal tracking-[-0.01563rem] text-[#000] outline-none transition duration-500 ease-in-out placeholder:pl-6 hover:border-[#D87D4A]"
+              placeholder="6891"
+            />
+          </label>
+        </form>
+        <div class="mt-[1.87rem] flex items-center justify-between gap-8">
+          <img
+            src="/images/checkout/icon-cash-on-delivery.svg"
+            alt=""
+            class=""
+          />
+          <p
+            class="w-[34.625rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+          >
+            The ‘Cash on Delivery’ option enables you to pay in cash when our
+            delivery courier arrives at your residence. Just make sure your
+            address is correct so that your order will not be cancelled.
+          </p>
+        </div>
+      </div>
+      <!-- Payment Method Detailes -->
+      <div
+        class="flex h-[38.25rem] w-[21.875rem] flex-col gap-8 rounded-lg bg-[#fff] px-[2.6rem] py-8"
+        onclick=""
+      >
+        <h2
+          class="text-lg font-bold uppercase leading-normal tracking-[0.08038rem] text-[#000]"
+        >
+          summary
+        </h2>
+        <!-- Items -->
+        <div class="flex flex-col gap-6">
+          <!-- Item 1 -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <img
+                src="/images/cart/image-xx99-mark-two-headphones.jpg"
+                alt=""
+                class="h-16 w-16 rounded-lg"
+              />
+              <div class="flex flex-col">
+                <h3
+                  class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#000]"
+                >
+                  XX99 MK II
+                </h3>
+                <h4
+                  class="text-sm font-bold leading-[1.5625rem] text-[#000] opacity-50"
+                >
+                  $ 2,999
+                </h4>
+              </div>
+            </div>
+            <h3
+              class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#000] opacity-50"
+            >
+              x1
+            </h3>
+          </div>
+          <!-- Item 2 -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <img
+                src="/images/cart/image-xx59-headphones.jpg"
+                alt=""
+                class="h-16 w-16 rounded-lg"
+              />
+              <div class="flex flex-col">
+                <h3
+                  class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#000]"
+                >
+                  XX59
+                </h3>
+                <h4
+                  class="text-sm font-bold leading-[1.5625rem] text-[#000] opacity-50"
+                >
+                  $ 899
+                </h4>
+              </div>
+            </div>
+            <h3
+              class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#000] opacity-50"
+            >
+              x2
+            </h3>
+          </div>
+          <!-- Item 3 -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <img
+                src="/images/cart/image-yx1-earphones.jpg"
+                alt=""
+                class="h-16 w-16 rounded-lg"
+              />
+              <div class="flex flex-col">
+                <h3
+                  class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#000]"
+                >
+                  YX1
+                </h3>
+                <h4
+                  class="text-sm font-bold leading-[1.5625rem] text-[#000] opacity-50"
+                >
+                  $ 599
+                </h4>
+              </div>
+            </div>
+            <h3
+              class="font-bolnormalading-[1.5625rem] text-[0.9375rem] text-[#000] opacity-50"
+            >
+              x1
+            </h3>
+          </div>
+        </div>
+        <!-- Money -->
+        <div class="flex flex-col gap-2">
+          <!-- Total -->
+          <div class="flex items-center justify-between">
+            <h2
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+            >
+              TOTAL
+            </h2>
+            <h2 class="text-lg font-bold uppercase leading-normal text-[#000]">
+              $ 5,396
+            </h2>
+          </div>
+          <!-- Shipping -->
+          <div class="flex items-center justify-between">
+            <h2
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+            >
+              SHIPPING
+            </h2>
+            <h2 class="text-lg font-bold uppercase leading-normal text-[#000]">
+              $ 50
+            </h2>
+          </div>
+          <!-- VAT -->
+          <div class="flex items-center justify-between">
+            <h2
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+            >
+              VAT (INCLUDED)
+            </h2>
+            <h2 class="text-lg font-bold uppercase leading-normal text-[#000]">
+              $ 1,079
+            </h2>
+          </div>
+          <!-- GRAND TOTAL -->
+          <div class="flex items-center justify-between">
+            <h2
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+            >
+              GRAND TOTAL
+            </h2>
+            <h2
+              class="text-lg font-bold uppercase leading-normal text-[#D87D4A]"
+            >
+              $ 5,446
+            </h2>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="cursor-pointern h-12 w-[17.75rem] cursor-pointer bg-[#D87D4A] text-sm font-bold uppercase leading-normal
+          tracking-[0.0625rem] text-[#fff] transition duration-500 ease-in-out hover:bg-[#FBAF85]"
+          >CONTINUE & PAY</button
+        >
+      </div>
+    </section>
+    <!-- Footer -->
+    <Footer />
+  </main>
+</Layout>

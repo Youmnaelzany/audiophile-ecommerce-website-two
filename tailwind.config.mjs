@@ -6,6 +6,8 @@ module.exports = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/images/**/*.{png,jpg,jpeg,gif,svg}",
   ],
   prefix: "",
   theme: {
