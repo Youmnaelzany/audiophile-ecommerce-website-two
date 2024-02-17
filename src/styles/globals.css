@@ -71,13 +71,6 @@ header::after {
   opacity: 0.2;
 }
 
-/* Index */
-.home-details {
-  background: url("/images/home/desktop/image-hero.jpg") no-repeat;
-  background-size: cover;
-  background-position: bottom;
-}
-
 /* Footer */
 .logo-box {
   position: relative;

@@ -4,30 +4,32 @@ import "@/styles/globals.css";
 
 <!-- Start Of Header -->
 <header
-  class="flex justify-between items-center h-24 bg-[#0E0E0E] text-[#FFFFFF] py-[2.31rem] px-[10.31rem] md:py-[4.63rem] md:px-[2.48rem] md:gap-[29.06rem]"
+  class="flex h-24 items-center justify-between bg-[#0E0E0E] px-[10.31rem] py-[2.31rem] text-[#FFFFFF] sm:w-[23.4375rem] sm:justify-between sm:px-6 sm:py-8 md:w-[48rem] md:gap-[29.06rem] md:px-[2.48rem] md:py-[4.63rem]"
 >
   <!-- Logo -->
-  <div class="md:flex md:gap-[2.62rem] md:items-center">
-    <button class="link hidden md:inline-block" data-dropdown-button>
+  <div
+    class="sm:flex sm:items-center sm:justify-between sm:gap-[4.75rem] md:flex md:items-center md:gap-[2.62rem]"
+  >
+    <button class="link hidden sm:inline-block md:inline-block">
       <img src="/images/shared/tablet/icon-hamburger.svg" alt="" class="" />
     </button>
     <img src="/images/shared/desktop/logo.svg" alt="logo" class="" />
   </div>
   <!-- Nav Bar -->
-  <nav class="md:hidden">
+  <nav class="sm:hidden md:hidden">
     <ul
-      class="flex justify-between items-center gap-[2.12rem] text-[0.8125rem] font-bold uppercase leading-[1.5625rem] tracking-[0.125rem]"
+      class="flex items-center justify-between gap-[2.12rem] text-[0.8125rem] font-bold uppercase leading-[1.5625rem] tracking-[0.125rem]"
     >
-      <li class="hover:text-[#D87D4A] transition-all ease-in-out duration-500">
+      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
         <a href="/" class="" target="_self">Home</a>
       </li>
-      <li class="hover:text-[#D87D4A] transition-all ease-in-out duration-500">
+      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
         <a href="/headphones" class="" target="_self">Headphones</a>
       </li>
-      <li class="hover:text-[#D87D4A] transition-all ease-in-out duration-500">
+      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
         <a href="/speakers" class="" target="_self">Speakers</a>
       </li>
-      <li class="hover:text-[#D87D4A] transition-all ease-in-out duration-500">
+      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
         <a href="/earphones" class="" target="_self">Earphones</a>
       </li>
     </ul>

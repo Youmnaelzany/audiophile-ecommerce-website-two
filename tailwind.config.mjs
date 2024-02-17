@@ -12,13 +12,16 @@ module.exports = {
   prefix: "",
   theme: {
     screens: {
-      sm: { min: "640px", max: "767px" },
-      md: { min: "768px", max: "1023px" },
-      xl: { min: "1280px", max: "1440px" },
+      sm: { min: "359px", max: "415px" },
+      md: { min: "760px", max: "1290px" },
+      xl: { min: "1280px", max: "1441px" },
     },
     extend: {
       backgroundImage: {
         "ZX7-SPEAKER": "url('/images/home/desktop/image-speaker-zx7.jpg')",
+        "hero-img": "url('/images/home/desktop/image-hero.jpg')",
+        "hero-img-md": "url('/images/home/tablet/image-header.jpg')",
+        "hero-img-sm": "url('/images/home/mobile/image-header.jpg')",
       },
     },
   },
