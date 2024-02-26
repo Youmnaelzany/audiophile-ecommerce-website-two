@@ -11,120 +11,76 @@ import BestAudioGear from "../components/BestAudioGear.astro";
   <!-- Header -->
   <Header />
   <main class="">
-    <!-- Website Home Detailes -->
+    <!-- New Propuct XX99 Mark II HeadphoneS -->
     <section
-      class="bg-hero-img md:bg-hero-img-md sm:bg-hero-img-sm flex flex-col gap-4 bg-cover bg-bottom bg-no-repeat pb-[9.59rem] pl-[10.31rem] pt-24
-       text-[#fff] sm:w-[23.4375rem]
-       sm:items-center sm:justify-center sm:bg-bottom sm:px-4 sm:text-center md:w-[48rem] md:items-center md:justify-center md:px-[2.44rem] md:text-center"
+      class="flex flex-col items-center justify-center gap-6 bg-hero-img-sm bg-cover bg-bottom bg-no-repeat px-6 py-[6.81rem] text-center text-[#fff] md:bg-hero-img-md md:px-[2.44rem] md:py-[9.64rem] lg:items-start lg:justify-start lg:bg-hero-img lg:bg-left-bottom lg:px-[10.31rem] lg:pb-[11.78rem] lg:pt-[8.06rem] lg:text-left"
     >
       <h1
-        class="sm:pt-[8.94rem text-sm font-normal uppercase leading-normal tracking-[0.625rem] opacity-[0.4964]"
+        class="text-sm font-normal uppercase leading-normal tracking-[0.625rem] opacity-[0.4964]"
       >
         NEW PRODUCT
       </h1>
       <h2
-        class="mt-2 w-[24.75rem] text-[3.5rem] font-bold uppercase leading-[3.625rem] tracking-[0.125rem] sm:w-[20.5rem] sm:text-[2.25rem] sm:leading-[2.5rem]"
+        class="text-[2.25rem] font-bold uppercase leading-[2.5rem] tracking-[0.08038rem] md:text-[3.5rem] md:leading-[3.625rem] md:tracking-[0.125rem] md:max-xl:w-[24.75rem]"
       >
-        XX99 Mark II Headphones
+        XX99 Mark II HeadphoneS
       </h2>
       <p
-        class="w-[21.8125rem] text-[0.9375rem] font-normal leading-[1.5625rem] opacity-75 sm:w-[20.5rem]"
+        class="text-[0.9375rem] font-normal leading-[1.5625rem] opacity-75 md:max-xl:w-[21.8125rem]"
       >
         Experience natural, lifelike audio and exceptional build quality made
         for the passionate music enthusiast.
       </p>
       <a
         href="/product-xx99-mark-two-headphones"
-        target="_self"
-        class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem]
-         transition duration-500 ease-in-out hover:bg-[#FBAF85]"
+        class="mt-2 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
         >See Product</a
       >
     </section>
-    <!-- Shop Other Product -->
+    <!-- Categor -->
     <Category />
     <!-- ZX9 SPEAKER -->
     <section
-      class="relative mx-[10.31rem] mb-12 mt-[10.5rem] flex h-[35rem] w-[69.375rem] items-center justify-between overflow-hidden rounded-lg bg-[#D87D4A] sm:mx-4 sm:w-[23.4375rem] md:mx-[2.44rem] md:w-[48rem]"
+      class="mx-6 mb-4 mt-[7.37rem] flex h-[37.5rem] flex-col items-center justify-center gap-8 rounded-lg bg-[#D87D4A] px-[1.44rem] pb-[3.44rem] pt-[3.56rem] text-center text-[#fff] md:mx-10 md:mb-8 md:mt-24 md:h-[45rem] md:px-[10.56rem] md:pb-16 md:pt-[3.25rem] lg:mx-[10.31rem] lg:mb-12 lg:mt-[10.5rem] lg:h-[35rem] lg:flex-row lg:justify-between lg:pl-[7.34rem] lg:pr-[5.94rem] lg:pt-[6rem] lg:text-left"
     >
-      <!-- Product Image & Pattern -->
-      <div class="">
-        <img
-          src="/images/home/desktop/pattern-circles.svg"
-          alt=""
-          class="absolute left-[-8rem] top-[-5rem] bg-contain"
+      <picture>
+        <source
+          media="(min-width:1024px) "
+          srcset="/public/images/home/desktop/image-speaker-zx9.png"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/public/images/home/tablet/image-speaker-zx9.png"
         />
         <img
-          src="/images/home/desktop/image-speaker-zx9.png"
+          src="/public/images/home/mobile/image-speaker-zx9.png"
           alt=""
-          class="absolute bottom-[-1rem] left-[8rem] h-[30.8125rem] w-[25.63963rem]"
+          class="w-40 bg-contain bg-no-repeat md:w-[12rem] lg:w-[25rem]"
         />
-      </div>
-      <!-- Product Detailes -->
-      <div class="flex flex-col gap-6 pr-24">
+      </picture>
+      <div
+        class="flex flex-col items-center justify-center gap-6 text-center text-[#fff]"
+      >
         <h2
-          class="w-[16.321rem] text-[3.5rem] font-bold uppercase leading-[3.625rem] tracking-[0.125rem] text-[#fff]"
+          class="w-[12rem] text-[2.25rem] font-bold uppercase leading-[2.5rem] tracking-[0.08038rem]"
         >
           ZX9 SPEAKER
         </h2>
-        <p
-          class="w-[21.8125rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#fff] opacity-75"
-        >
+        <p class="text-[0.9375rem] font-normal leading-[1.5625rem] opacity-75">
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </p>
         <a
           href="/product-zx9-speaker"
-          class="mt-6 flex h-12 w-40 cursor-pointer items-center justify-center bg-[#000] text-sm font-bold uppercase tracking-[0.0625rem] text-[#fff] transition duration-500 ease-in-out hover:bg-[#4C4C4C]"
-          >See Product</a
-        >
+          class="h-12 w-40 bg-[#000] text-sm font-bold uppercase tracking-[0.0625rem] text-[#fff]"
+        ></a>
       </div>
     </section>
     <!-- ZX7 SPEAKER -->
-    <section
-      class="mx-[10.31rem] mb-12 flex h-[20rem] w-[69.375rem] flex-col justify-center gap-8 rounded-lg bg-ZX7-SPEAKER pl-[7.88rem] sm:mx-4 sm:w-[23.4375rem] md:mx-[2.44rem] md:w-[48rem]"
-    >
-      <!-- Product Image & Pattern -->
-      <h2
-        class="text-[1.75rem] font-bold uppercase leading-normal tracking-[0.125rem] text-[#000]"
-      >
-        ZX7 SPEAKER
-      </h2>
-      <a
-        href="/product-zx7-speaker"
-        class="mt-6 flex h-12 w-40 cursor-pointer items-center
-           justify-center border border-solid border-[#000] bg-transparent text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#000] transition duration-500 ease-in-out hover:bg-[#000] hover:text-[#fff]"
-        >See Product</a
-      >
-    </section>
+    <section class=""></section>
     <!-- YX1 EARPHONES -->
-    <section
-      class="mx-[10.31rem] mb-12 flex items-center justify-between sm:mx-4 sm:w-[23.4375rem] md:mx-[2.44rem] md:w-[48rem]"
-    >
-      <div class="">
-        <img
-          src="/images/home/desktop/image-earphones-yx1.jpg"
-          alt=""
-          class="h-[20rem] w-[33.75rem] rounded-lg"
-        />
-      </div>
-      <div
-        class="flex h-[20rem] w-[33.75rem] flex-col justify-center gap-8 rounded-lg bg-[#F1F1F1] pl-[5.49rem]"
-      >
-        <h2
-          class="text-[1.75rem] font-bold uppercase leading-normal tracking-[0.125rem] text-[#000]"
-        >
-          YX1 EARPHONES
-        </h2>
-        <a
-          href="/product-earphones"
-          class="mt-6 flex h-12 w-40 cursor-pointer items-center
-           justify-center border border-solid border-[#000] bg-transparent text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#000] transition duration-500 ease-in-out hover:bg-[#000] hover:text-[#fff]"
-          >See Product</a
-        >
-      </div>
-    </section>
-    <!--  Best Audio Gear -->
+    <section class=""></section>
+    <!-- Best Audio Gear -->
     <BestAudioGear />
   </main>
   <!-- Footer -->

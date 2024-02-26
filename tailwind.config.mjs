@@ -12,10 +12,12 @@ module.exports = {
   prefix: "",
   theme: {
     screens: {
-      sm: { min: "359px", max: "415px" },
-      md: { min: "760px", max: "1290px" },
-      xl: { min: "1280px", max: "1441px" },
+      sm: "375px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1441px",
     },
+
     extend: {
       backgroundImage: {
         "ZX7-SPEAKER": "url('/images/home/desktop/image-speaker-zx7.jpg')",

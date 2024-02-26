@@ -15,8 +15,6 @@
 body {
   font-family: "Manrope", sans-serif;
   min-height: 100svh;
-  width: 90rem;
-  max-width: 1440px;
 }
 
 img,
@@ -56,7 +54,7 @@ p {
 
 /* Header Styling */
 
-header {
+/* header {
   position: relative;
 }
 
@@ -69,10 +67,10 @@ header::after {
   height: 0.0625rem;
   background-color: #fff;
   opacity: 0.2;
-}
+} */
 
 /* Footer */
-.logo-box {
+/* .logo-box {
   position: relative;
 }
 
@@ -87,4 +85,4 @@ header::after {
 
 input[type="radio"]:checked {
   accent-color: #d87d4a;
-}
+} */

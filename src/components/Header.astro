@@ -4,41 +4,56 @@ import "@/styles/globals.css";
 
 <!-- Start Of Header -->
 <header
-  class="flex h-24 items-center justify-between bg-[#0E0E0E] px-[10.31rem] py-[2.31rem] text-[#FFFFFF] sm:w-[23.4375rem] sm:justify-between sm:px-6 sm:py-8 md:w-[48rem] md:gap-[29.06rem] md:px-[2.48rem] md:py-[4.63rem]"
+  class="relative flex items-center justify-between bg-[#000] px-6 py-[2.19rem] text-[#fff] after:absolute after:mb-[-6.25rem] after:h-[0.0625rem] after:w-[69.375rem] after:bg-[#fff] after:opacity-[0.104] after:content-[''] md:px-[2.44rem] md:after:opacity-[0.104] lg:px-[10.31rem] lg:after:opacity-20"
 >
-  <!-- Logo -->
-  <div
-    class="sm:flex sm:items-center sm:justify-between sm:gap-[4.75rem] md:flex md:items-center md:gap-[2.62rem]"
-  >
-    <button class="link hidden sm:inline-block md:inline-block">
-      <img src="/images/shared/tablet/icon-hamburger.svg" alt="" class="" />
-    </button>
-    <img src="/images/shared/desktop/logo.svg" alt="logo" class="" />
+  <div class="flex items-center justify-between gap-[4.75rem] md:gap-[2.63rem]">
+    <img
+      src="/public/images/shared/tablet/icon-hamburger.svg"
+      alt="icon-hamburger"
+      class="lg:hidden"
+    />
+    <img src="/public/images/shared/desktop/logo.svg" alt="logo" class="" />
   </div>
-  <!-- Nav Bar -->
-  <nav class="sm:hidden md:hidden">
-    <ul
-      class="flex items-center justify-between gap-[2.12rem] text-[0.8125rem] font-bold uppercase leading-[1.5625rem] tracking-[0.125rem]"
-    >
-      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
-        <a href="/" class="" target="_self">Home</a>
+  <nav class="sm:hidden md:hidden lg:inline-block">
+    <ul class="flex items-center justify-between gap-[2.13rem]">
+      <li>
+        <a
+          href="/"
+          class="cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.125rem] transition-all duration-500 ease-in-out hover:text-[#D87D4A]"
+          >Home</a
+        >
       </li>
-      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
-        <a href="/headphones" class="" target="_self">Headphones</a>
+      <li>
+        <a
+          href="/headphones"
+          class="cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.125rem] transition-all duration-500 ease-in-out hover:text-[#D87D4A]"
+          >HEADPHONES</a
+        >
       </li>
-      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
-        <a href="/speakers" class="" target="_self">Speakers</a>
+      <li>
+        <a
+          href="/speakers"
+          class="cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.125rem] transition-all duration-500 ease-in-out hover:text-[#D87D4A]"
+          >SPEAKERS</a
+        >
       </li>
-      <li class="transition-all duration-500 ease-in-out hover:text-[#D87D4A]">
-        <a href="/earphones" class="" target="_self">Earphones</a>
+      <li>
+        <a
+          href="/earphones"
+          class="cursor-pointer text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.125rem] transition-all duration-500 ease-in-out hover:text-[#D87D4A]"
+          >EARPHONES</a
+        >
       </li>
     </ul>
   </nav>
-  <!-- Cart -->
   <div class="">
-    <a href="/checkout" class="" target="_self">
-      <img src="/images/shared/desktop/icon-cart.svg" alt="" class="" />
-    </a>
+    <a href="/checkout" class=""
+      ><img
+        src="/public/images/shared/desktop/icon-cart.svg"
+        alt=""
+        class="/cursor-pointer"
+      /></a
+    >
   </div>
 </header>
 <!-- End Of Header -->
