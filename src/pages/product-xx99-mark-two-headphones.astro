@@ -11,59 +11,72 @@ import BestAudioGear from "../components/BestAudioGear.astro";
   <!-- Header -->
   <Header />
   <main>
+    <!-- Go Back Link -->
+    <section
+      class="mx-6 mb-8 mt-4 md:mx-10 md:mb-6 md:mt-[2.06rem] lg:mx-[10.31rem] lg:mb-14 lg:mt-[4.94rem]"
+    >
+      <a
+        href="/"
+        class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+        >Go Back
+      </a>
+    </section>
     <!-- XX99 Mark II Headphones -->
     <section
-      class="flex justify-between items-center mx-[10.31rem] mt-[4.94rem] gap-[7.81rem] mb-[10rem]"
+      class="mx-6 flex flex-col gap-8 md:mx-10 md:flex-row md:items-center md:gap-[4.34rem] lg:mx-[10.31rem] lg:items-center lg:gap-[7.81rem]"
     >
       <!-- Product Image -->
-      <div class="flex flex-col gap-[3.5rem]">
-        <a
-          href="/"
-          class="inline-block opacity-50 text-[#000] text-[0.9375rem] font-normal leading-[1.5625rem]"
-          >Go Back
-        </a>
-        <img
-          src="/images/product-xx99-mark-two-headphones/desktop/image-product.jpg"
-          alt=""
-          class="inline-block w-[33.75rem] h-[35rem] rounded-lg"
+      <picture>
+        <source
+          media="(min-width:1024px)"
+          srcset="/images/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
         />
-      </div>
+        <source
+          media="(min-width:768px)"
+          srcset="/images/product-xx99-mark-two-headphones/tablet/image-product.jpg"
+        />
+        <img
+          src="/images/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg"
+          alt=""
+          class="rounded-lg"
+        />
+      </picture>
       <!-- Product Info -->
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-6 md:gap-4">
         <h2
-          class="text-[#D87D4A] text-sm font-normal leading-normal tracking-[0.625rem] uppercase"
+          class="text-sm font-normal uppercase leading-normal tracking-[0.625rem] text-[#D87D4A]"
         >
           NEW PRODUCT
         </h2>
         <h2
-          class="w-[27.8125rem] text-[2.5rem] font-bold leading-[2.75rem] tracking-[0.08931rem] uppercase"
+          class="text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-[#000] md:leading-[2rem] lg:text-[2.5rem] lg:leading-[2.75rem] lg:tracking-[0.08931rem]"
         >
           XX99 Mark II Headphones
         </h2>
         <p
-          class="w-[27.8125rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50 mt-4"
+          class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50 md:w-[21.1875rem] md:max-xl:mt-4"
         >
           The new XX99 Mark II headphones is the pinnacle of pristine audio. It
           redefines your premium headphone experience by reproducing the
           balanced depth and precision of studio-quality sound.
         </p>
         <h3
-          class="text-[#000] text-lg font-bold leading-normal tracking-[0.08038rem] uppercase mt-4"
+          class="text-lg font-bold uppercase tracking-[0.08038rem] text-[#000] md:max-xl:mt-4"
         >
           $ 2,999
         </h3>
         <!-- Shop The Product -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-8 md:max-xl:mt-[1.94rem]">
           <div
-            class="bg-[#F1F1F1] w-[7.5rem] h-12 flex justify-center items-center gap-[1.31rem]"
+            class="flex h-12 w-[7.5rem] items-center justify-center gap-4 bg-[#F1F1F1] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#000]"
           >
-            <button type="button" class="minusBtn"> - </button>
+            <button type="button" class="minusBtn opacity-25"> - </button>
             <button type="button" class="minusBtn"> 1 </button>
-            <button type="button" class="PlusBtn"> + </button>
+            <button type="button" class="PlusBtn opacity-25"> + </button>
           </div>
           <button
             type="button"
-            class="bg-[#D87D4A] w-40 h-12 text-[#fff] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase hover:bg-[#FBAF85] transition ease-in-out duration-500"
+            class="leading-noraml h-12 w-40 bg-[#D87D4A] text-sm font-bold uppercase tracking-[0.0625rem] text-[#fff]"
             >ADD TO CART</button
           >
         </div>
@@ -71,18 +84,16 @@ import BestAudioGear from "../components/BestAudioGear.astro";
     </section>
     <!-- Features & In The Box -->
     <section
-      class="flex justify-between items-center gap-[7.81rem] mx-[10.31rem] mb-40"
+      class="mx-6 mt-[5.5rem] flex flex-col gap-[5.5rem] md:mx-10 md:mt-[7.5rem] md:gap-[7.5rem] lg:mx-[10.31rem] lg:mt-40 lg:flex-row"
     >
       <!-- FEATURES -->
-      <div class="flex flex-col gap-8 w-[39.6875rem ]">
+      <div class="flex flex-col gap-6 text-[#000] md:gap-8">
         <h2
-          class="text-[#000] text-[2rem] leading-[2.25rem] tracking-[0.07144rem] uppercase"
+          class="text-2xl font-bold uppercase leading-[2.25rem] tracking-[0.05356rem] md:text-[2rem]"
         >
           FEATURES
         </h2>
-        <p
-          class="w-[39.6875rem] text-[#000] text-[0.9375rem] font-normal opacity-50"
-        >
+        <p class="text-[0.9375rem] font-normal leading-[1.5625rem] opacity-50">
           Featuring a genuine leather head strap and premium earcups, these
           headphones deliver superior comfort for those who like to enjoy
           endless listening. It includes intuitive controls designed for any
@@ -91,7 +102,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
           you&acute;ll never miss a beat.
         </p>
         <p
-          class="w-[39.6875rem] text-[#000] text-[0.9375rem] font-normal opacity-50"
+          class="text-[0.9375rem] font-normal leading-[1.5625rem] opacity-50 md:w-[43.0625rem]"
         >
           The advanced Active Noise Cancellation with built-in equalizer allow
           you to experience your audio world on your terms. It lets you enjoy
@@ -102,69 +113,49 @@ import BestAudioGear from "../components/BestAudioGear.astro";
         </p>
       </div>
       <!-- In The Box -->
-      <div class="flex flex-col gap-8 w-[21.875rem] h-[14.0625rem]">
-        <h2
-          class="text-[#000] text-[2rem] font-bold leading-[2.5rem] tracking-[0.07144rem] uppercase"
-        >
-          in the box
-        </h2>
-        <div class="flex flex-col gap-4">
-          <div class="flex gap-[1.5rem]">
+      <div class="flex gap-6 text-[#000]">
+        <h2 class="text-2xl">in the box</h2>
+        <div class="">
+          <div class="">
+            <h3 class="">1x</h3>
+            <h3 class="">Headphone Unit</h3>
+          </div>
+          <div class="">
+            <h3 class="">2x</h3>
+            <h3 class="">Replacement Earcups</h3>
+          </div>
+          <div class="flex gap-6">
             <h3
-              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+              class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
               1x
             </h3>
             <h3
-              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
-            >
-              Headphone Unit
-            </h3>
-          </div>
-          <div class="flex gap-[1.5rem]">
-            <h3
-              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
-            >
-              2x
-            </h3>
-            <h3
-              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
-            >
-              Replacement Earcups
-            </h3>
-          </div>
-          <div class="flex gap-[1.5rem]">
-            <h3
-              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
-            >
-              1x
-            </h3>
-            <h3
-              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
             >
               User Manual
             </h3>
           </div>
-          <div class="flex gap-[1.5rem]">
+          <div class="flex gap-6">
             <h3
-              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+              class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
               1x
             </h3>
             <h3
-              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
             >
               3.5mm 5m Audio Cable
             </h3>
           </div>
-          <div class="flex gap-[1.5rem]">
+          <div class="flex gap-6">
             <h3
-              class="text-[#D87D4A] font-bold text-[0.9375rem] leading-[1.5625rem]"
+              class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
               1x
             </h3>
             <h3
-              class="text-[#000] opacity-50 font-normal text-[0.9375rem] leading-[1.5625rem]"
+              class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
             >
               Travel Bag
             </h3>
@@ -174,7 +165,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
     </section>
     <!-- Product Images  -->
     <section
-      class="mx-[10.31rem] mb-40 flex justify-between items-center gap-2"
+      class="mx-[10.31rem] mb-40 flex items-center justify-between gap-2"
     >
       <!-- First Col -->
       <div class="flex flex-col gap-8">
@@ -206,68 +197,68 @@ import BestAudioGear from "../components/BestAudioGear.astro";
     </section>
     <!-- You May Also Like -->
     <section
-      class="mx-[10.31rem] mb-40 flex flex-col justify-center items-center gap-12"
+      class="mx-[10.31rem] mb-40 flex flex-col items-center justify-center gap-12"
     >
       <h2
-        class="uppercase text-[#000] text-[2rem] font-bold leading-[2.5rem] tracking-[0.07144rem]"
+        class="text-[2rem] font-bold uppercase leading-[2.5rem] tracking-[0.07144rem] text-[#000]"
       >
         you may also like
       </h2>
-      <div class="flex justify-center items-center gap-[1.88rem] text-center">
-        <div class="flex flex-col gap-8 justify-center items-center">
+      <div class="flex items-center justify-center gap-[1.88rem] text-center">
+        <div class="flex flex-col items-center justify-center gap-8">
           <img
             src="/images/shared/desktop/image-xx99-mark-one-headphones.jpg"
             alt=""
-            class="w-[21.875rem] h-[19.875rem] bg-[#F1F1F1] rounded-lg"
+            class="h-[19.875rem] w-[21.875rem] rounded-lg bg-[#F1F1F1]"
           />
           <h2
-            class="tracking-[0.10713rem] text-[#000]
-            text-[1.5rem]
-            font-bold
-            leading-normal"
+            class="text-2xl font-bold
+            leading-normal
+            tracking-[0.10713rem]
+            text-[#000]"
           >
             XX99 MARK I
           </h2>
           <a
             href="/product-xx99-mark-one-headphones"
             target="_self"
-            class="w-40 h-12 bg-[#D87D4A] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase flex justify-center items-center mt-6 hover:bg-[#FBAF85] transition-all ease-in-out duration-500 text-[#fff]"
+            class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
             >See Product</a
           >
         </div>
-        <div class="flex flex-col gap-8 justify-center items-center">
+        <div class="flex flex-col items-center justify-center gap-8">
           <img
             src="/images/shared/desktop/image-xx59-headphones.jpg"
             alt=""
-            class="w-[21.875rem] h-[19.875rem] bg-[#F1F1F1] rounded-lg"
+            class="h-[19.875rem] w-[21.875rem] rounded-lg bg-[#F1F1F1]"
           />
           <h2
-            class="tracking-[0.10713rem] text-[#000] text-[1.5rem] font-bold leading-normal uppercase"
+            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-[#000]"
           >
             XX59
           </h2>
           <a
             href="/product-xx59-headphones"
             target="_self"
-            class="w-40 h-12 bg-[#D87D4A] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase flex justify-center items-center mt-6 hover:bg-[#FBAF85] transition-all ease-in-out duration-500 text-[#fff]"
+            class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
             >See Product</a
           >
         </div>
-        <div class="flex flex-col gap-8 justify-center items-center">
+        <div class="flex flex-col items-center justify-center gap-8">
           <img
             src="/images/shared/desktop/image-zx9-speaker.jpg"
             alt=""
-            class="w-[21.875rem] h-[19.875rem] bg-[#F1F1F1] rounded-lg"
+            class="h-[19.875rem] w-[21.875rem] rounded-lg bg-[#F1F1F1]"
           />
           <h2
-            class="tracking-[0.10713rem] text-[#000] text-[1.5rem] font-bold leading-normal uppercase"
+            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-[#000]"
           >
             ZX9 SPEAKER
           </h2>
           <a
             href="/product-zx9-speaker"
             target="_self"
-            class="w-40 h-12 bg-[#D87D4A] text-sm font-bold leading-normal tracking-[0.0625rem] uppercase flex justify-center items-center mt-6 hover:bg-[#FBAF85] transition-all ease-in-out duration-500 text-[#fff]"
+            class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
             >See Product</a
           >
         </div>

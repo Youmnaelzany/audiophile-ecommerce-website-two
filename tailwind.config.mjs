@@ -20,7 +20,9 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        "ZX7-SPEAKER": "url('/images/home/desktop/image-speaker-zx7.jpg')",
+        "ZX7-SPEAKER-lg": "url('/images/home/desktop/image-speaker-zx7.jpg')",
+        "ZX7-SPEAKER-md": "url('/images/home/tablet/image-speaker-zx7.jpg')",
+        "ZX7-SPEAKER": "url('/images/home/mobile/image-speaker-zx7.jpg')",
         "hero-img": "url('/images/home/desktop/image-hero.jpg')",
         "hero-img-md": "url('/images/home/tablet/image-header.jpg')",
         "hero-img-sm": "url('/images/home/mobile/image-header.jpg')",
