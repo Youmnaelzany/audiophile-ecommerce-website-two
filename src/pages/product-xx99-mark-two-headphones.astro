@@ -70,13 +70,23 @@ import BestAudioGear from "../components/BestAudioGear.astro";
           <div
             class="flex h-12 w-[7.5rem] items-center justify-center gap-4 bg-[#F1F1F1] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#000]"
           >
-            <button type="button" class="minusBtn opacity-25"> - </button>
+            <button
+              type="button"
+              class="minusBtn opacity-25 transition-all duration-500 ease-in-out hover:text-[#D87D4A]"
+            >
+              -
+            </button>
             <button type="button" class="minusBtn"> 1 </button>
-            <button type="button" class="PlusBtn opacity-25"> + </button>
+            <button
+              type="button"
+              class="PlusBtn opacity-25 transition-all duration-500 ease-in-out hover:text-[#D87D4A]"
+            >
+              +
+            </button>
           </div>
           <button
             type="button"
-            class="leading-noraml h-12 w-40 bg-[#D87D4A] text-sm font-bold uppercase tracking-[0.0625rem] text-[#fff]"
+            class="leading-noraml h-12 w-40 cursor-pointer bg-[#D87D4A] text-sm font-bold uppercase tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
             >ADD TO CART</button
           >
         </div>
@@ -122,7 +132,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
           in the box
         </h2>
         <div class="">
-          <div class="flex items-center justify-start gap-6">
+          <div class="flex gap-6">
             <h3
               class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
@@ -134,7 +144,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
               Headphone Unit
             </h3>
           </div>
-          <div class="flex items-center justify-start gap-6">
+          <div class="flex gap-[1.31rem]">
             <h3
               class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
@@ -146,7 +156,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
               Replacement Earcups
             </h3>
           </div>
-          <div class="flex items-center justify-start gap-6">
+          <div class="flex gap-6">
             <h3
               class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
@@ -158,7 +168,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
               User Manual
             </h3>
           </div>
-          <div class="flex items-center justify-start gap-6">
+          <div class="flex gap-6">
             <h3
               class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
@@ -170,7 +180,7 @@ import BestAudioGear from "../components/BestAudioGear.astro";
               3.5mm 5m Audio Cable
             </h3>
           </div>
-          <div class="flex items-center justify-start gap-6">
+          <div class="flex gap-6">
             <h3
               class="text-[0.9375rem] font-bold leading-[1.5625rem] text-[#D87D4A]"
             >
@@ -187,102 +197,164 @@ import BestAudioGear from "../components/BestAudioGear.astro";
     </section>
     <!-- Product Images  -->
     <section
-      class="mx-[10.31rem] mb-40 flex items-center justify-between gap-2"
+      class="mx-6 mb-28 mt-24 flex flex-col gap-4 md:mx-10 md:my-32 md:flex-row lg:mx-[10.31rem] lg:my-40"
     >
       <!-- First Col -->
-      <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-4 lg:gap-8">
         <!-- First Image / Gallery 1-->
-        <div class="">
+        <picture>
+          <source
+            media="(min-width:1024px)"
+            srcset="/images/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="/images/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg"
+          />
           <img
-            src="/images/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+            src="/images/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg"
             alt=""
             class="rounded-lg"
           />
-        </div>
-        <!-- Second Image / Gallery 2-->
-        <div class="">
+        </picture>
+        <!-- First Image / Gallery 2-->
+        <picture>
+          <source
+            media="(min-width:1024px )"
+            srcset="/images/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg"
+          />
           <img
-            src="/images/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+            src="/images/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg"
             alt=""
             class="rounded-lg"
           />
-        </div>
+        </picture>
       </div>
       <!-- Second Col / Gallery 3-->
-      <div class="">
+      <picture>
+        <source
+          media="(min-width:1024px )"
+          srcset="/images/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg"
+        />
         <img
-          src="/images/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+          src="/images/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg"
           alt=""
           class="rounded-lg"
         />
-      </div>
+      </picture>
     </section>
     <!-- You May Also Like -->
     <section
-      class="mx-[10.31rem] mb-40 flex flex-col items-center justify-center gap-12"
+      class="mx-6 my-32 flex flex-col items-center justify-center gap-10 text-[#000] md:mx-10 md:my-28 md:gap-14 lg:mx-[10.31rem] lg:my-40 lg:gap-16"
     >
       <h2
-        class="text-[2rem] font-bold uppercase leading-[2.5rem] tracking-[0.07144rem] text-[#000]"
+        class="text-2xl font-bold uppercase leading-[2.25rem] tracking-[0.05356rem]"
       >
         you may also like
       </h2>
-      <div class="flex items-center justify-center gap-[1.88rem] text-center">
+      <div
+        class="flex flex-col items-center justify-center gap-14 md:flex-row md:gap-4 lg:gap-[1.88rem]"
+      >
         <div class="flex flex-col items-center justify-center gap-8">
-          <img
-            src="/images/shared/desktop/image-xx99-mark-one-headphones.jpg"
-            alt=""
-            class="h-[19.875rem] w-[21.875rem] rounded-lg bg-[#F1F1F1]"
-          />
+          <picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="/images/shared/desktop/image-xx99-mark-one-headphones.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/shared/tablet/image-xx99-mark-one-headphones.jpg"
+            />
+            <img
+              src="/images/shared/mobile/image-xx99-mark-one-headphones.jpg"
+              alt=""
+              class="rounded-lg"
+            />
+          </picture>
           <h2
-            class="text-2xl font-bold
-            leading-normal
-            tracking-[0.10713rem]
-            text-[#000]"
+            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem]"
           >
             XX99 MARK I
           </h2>
-          <a
-            href="/product-xx99-mark-one-headphones"
-            target="_self"
-            class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
-            >See Product</a
+          <div
+            class="flex h-12 w-40 items-center justify-center bg-[#D87D4A] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
           >
+            <a
+              href="/product-xx99-mark-one-headphones"
+              class="font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff]"
+              >See Product</a
+            >
+          </div>
         </div>
         <div class="flex flex-col items-center justify-center gap-8">
-          <img
-            src="/images/shared/desktop/image-xx59-headphones.jpg"
-            alt=""
-            class="h-[19.875rem] w-[21.875rem] rounded-lg bg-[#F1F1F1]"
-          />
+          <picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="/images/shared/desktop/image-xx59-headphones.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/shared/tablet/image-xx59-headphones.jpg"
+            />
+            <img
+              src="/images/shared/mobile/image-xx59-headphones.jpg"
+              alt=""
+              class="rounded-lg"
+            />
+          </picture>
           <h2
-            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-[#000]"
+            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem]"
           >
             XX59
           </h2>
-          <a
-            href="/product-xx59-headphones"
-            target="_self"
-            class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
-            >See Product</a
+          <div
+            class="flex h-12 w-40 items-center justify-center bg-[#D87D4A] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
           >
+            <a
+              href="/product-xx59-headphones"
+              class="font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff]"
+              >See Product</a
+            >
+          </div>
         </div>
         <div class="flex flex-col items-center justify-center gap-8">
-          <img
-            src="/images/shared/desktop/image-zx9-speaker.jpg"
-            alt=""
-            class="h-[19.875rem] w-[21.875rem] rounded-lg bg-[#F1F1F1]"
-          />
+          <picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="/images/shared/desktop/image-zx9-speaker.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/shared/tablet/image-zx9-speaker.jpg"
+            />
+            <img
+              src="/images/shared/mobile/image-zx9-speaker.jpg"
+              alt=""
+              class="rounded-lg"
+            />
+          </picture>
           <h2
-            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem] text-[#000]"
+            class="text-2xl font-bold uppercase leading-normal tracking-[0.10713rem]"
           >
             ZX9 SPEAKER
           </h2>
-          <a
-            href="/product-zx9-speaker"
-            target="_self"
-            class="mt-6 flex h-12 w-40 items-center justify-center bg-[#D87D4A] text-sm font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
-            >See Product</a
+          <div
+            class="flex h-12 w-40 items-center justify-center bg-[#D87D4A] transition-all duration-500 ease-in-out hover:bg-[#FBAF85]"
           >
+            <a
+              href="/product-zx9-speaker"
+              class="font-bold uppercase leading-normal tracking-[0.0625rem] text-[#fff]"
+              >See Product</a
+            >
+          </div>
         </div>
       </div>
     </section>
