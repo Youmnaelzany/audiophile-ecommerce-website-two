@@ -15,6 +15,8 @@
 body {
   font-family: "Manrope", sans-serif;
   min-height: 100svh;
+  max-width: 1442px;
+  background-color: #fafafa;
 }
 
 img,
@@ -51,38 +53,3 @@ p {
     scroll-padding-top: 3rem;
   }
 }
-
-/* Header Styling */
-
-/* header {
-  position: relative;
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  bottom: -0.2rem;
-  left: 10.31rem;
-  width: 69.375rem;
-  height: 0.0625rem;
-  background-color: #fff;
-  opacity: 0.2;
-} */
-
-/* Footer */
-/* .logo-box {
-  position: relative;
-}
-
-.logo-box::before {
-  content: "";
-  position: absolute;
-  top: -4.7rem;
-  width: 6.3125rem;
-  height: 0.25rem;
-  background: #d87d4a;
-}
-
-input[type="radio"]:checked {
-  accent-color: #d87d4a;
-} */
